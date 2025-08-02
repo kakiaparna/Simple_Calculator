@@ -26,25 +26,30 @@ class calculator:
         else:
             return "Cannot divide by zero"
 
-a=int(input("enter a:"))
-b=int(input("enter b:"))
-operation = input("Choose operation (+, -, *, /, //,**,%): ")
+def main():
+    a = int(input("enter a:"))
+    b = int(input("enter b:"))
+    operation = input("Choose operation (+, -, *, /, //, **, %): ")
 
-calc = calculator(a, b)
+    calc = calculator(a, b)
 
-if operation == '+':
-    print("Result:", calc.add())
-elif operation == '-':
-    print("Result:", calc.subtract())
-elif operation == '*':
-    print("Result:", calc.multiply())
-elif operation == '/':
-    print("Result:", calc.div())
-elif operation == '//':
-    print("Result:", calc.floor())
-elif operation == '**':
-    print("Result:", calc.square())
-elif operation == '%':
-    print("Result:", calc.modulus())
-else:
-    print("Invalid operation.")
+    if operation == '+':
+        print("Result:", calc.add())
+    elif operation == '-':
+        print("Result:", calc.subtract())
+    elif operation == '*':
+        print("Result:", calc.multiply())
+    elif operation == '/':
+        print("Result:", calc.div())
+    elif operation == '//':
+        print("Result:", calc.floor())
+    elif operation == '**':
+        square_a, square_b = calc.square()
+        print(f"Result: a squared = {square_a}, b squared = {square_b}")
+    elif operation == '%':
+        print("Result:", calc.modulus())
+    else:
+        print("Invalid operation.")
+
+if __name__ == "__main__":
+    main()
