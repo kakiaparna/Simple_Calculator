@@ -46,7 +46,5 @@ Result of division: 2.0
 
 🎓 This project is part of my Python OOP learning journey.
 
----
-
 --✅ You can **copy and paste this directly into your `README.md` file** on GitHub.
---Let me know when you're ready to implement one of the future improvements — we can build it step by step!
+
